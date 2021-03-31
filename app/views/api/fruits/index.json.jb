@@ -1,1 +1,3 @@
-{ message: @fruits }
+@fruits.map do |fruit|
+  render partial: "fruit.json.jb", locals: { fruit: fruit }
+end
